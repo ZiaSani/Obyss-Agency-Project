@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    --bg-color: #151515;
+    --text-color: #FFFFFF;
+    --border-color: #FFFFFF;
+    --btn-color: #FFA63D;
+}
+
+#main {
+    position: relative;
+    background-color: #000000;
+}
+
+.loader {
+    height: 100%;
+    background-color: #000000;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    color: var(--text-color);
+    font-family: 'Plain Light';
+    padding: 17vh 5vw;
+}
+
+.loader-text {
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    /* background-color: red; */
+    gap: 2vw;
+}
+
+.loader-counter {
+    margin-left: 2vw;
+    padding-top: .5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    font-family: 'silk serif';
+    /* background-color: red; */
+    width: 18%;
+}
+
+.loader-counter h4,
+.loader-counter h5 {
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+.loader-counter h4 {
+    /* background-color: green; */
+    width: 25%;
+    text-align: start;
+
+}
+
+.loader-text h1 {
+    font-size: 7vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.loader-text h2 {
+    font-size: 6.8vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 1vw;
+    /* margin-top: -.2vw; */
+    /* animation-name: nowAnime;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite; */
+    height: fit-content;
+    width: fit-content;
+}
+
+/* @keyframes nowAnime {
+    0% {
+        font-family: 'Plain Light';
+        -webkit-text-stroke: 1px var(--text-color);
+        color: var(--text-color);
+        opacity: 1;
+    }
+    48% {
+        font-family: 'Plain Light';
+        -webkit-text-stroke: 1px var(--text-color);
+        color: var(--text-color);
+        opacity: 0;
+    }
+
+    50% {
+        font-family: 'silk serif';
+        font-weight: 100;
+        -webkit-text-stroke: 1px var(--text-color);
+        color: transparent;
+        opacity: 1;
+    }
+    100% {
+        font-family: 'silk serif';
+        font-weight: 100;
+        -webkit-text-stroke: 1px var(--text-color);
+        color: transparent;
+        opacity: 0;
+    }
+} */
+
+.pages {
+    color: var(--text-color);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--bg-color);
+}
